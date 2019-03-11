@@ -59,6 +59,11 @@ body {
     
 }
 
+.nav-main li.active, .nav-main a.active {
+    color: #feebb7;
+    transform: rotate(5deg) scale(1.2);
+}
+
 .logo img {
     height: 4rem;
 }
@@ -69,7 +74,7 @@ body {
 }
 
 .nav-main-items a:hover {
-    color: grey;
+    color: #feebb7;
 
 }
 
@@ -97,7 +102,7 @@ body {
         }
 
         .dropdown a:hover {
-            color: grey;
+            color: #feebb7;
         }
 
             .dropdown-products:hover > ul {
@@ -182,11 +187,31 @@ body {
         }
         
         .mobile-menu-list a:hover {
-            color: grey;
+            color: #feebb7;
             cursor: pointer;
             
         }
 /* MOBILE MENU DROPDOWN END */
+
+.lines {
+ display: flex;
+}
+
+.line {
+    height: .4rem;  
+    flex: 0 1 33.3333vw
+}
+.line.white {
+    background-color: white;
+}
+
+.line.red {
+    background-color: #75021f;
+}
+
+.line.yellow {
+    background-color: #feebb7;
+}
 
 main {
     width: 100%;
@@ -215,6 +240,17 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.index-hero-img:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .drumlessen-hero-img {
@@ -246,6 +282,16 @@ main {
 .hero-title {
     color: white;
     font-size: 6rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title .red {
+    color: #75021f;
+}
+
+.hero-title .yellow {
+    color: #feebb7;
 }
   
 .block {
@@ -259,7 +305,7 @@ main {
 }
 
 .block.block-videos {
-    background: #feebb7;
+    background: #feebb78f;
 
 }
 
@@ -366,8 +412,7 @@ main {
 
 .products-header {
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
     font-size: 2.5rem;
     font-weight: 600;
 }
@@ -378,7 +423,7 @@ main {
 
 .product-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1.5rem;
     margin-bottom: 4rem;
 }
