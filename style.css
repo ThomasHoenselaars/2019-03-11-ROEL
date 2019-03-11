@@ -230,6 +230,19 @@ main {
   justify-content: center;
 }
 
+.workshops-hero-img {
+    background-image: url('images/groepslessen.jpg');
+    width: 100%;
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-title {
     color: white;
     font-size: 6rem;
@@ -464,6 +477,10 @@ main {
     }
 
     .drumlessen-hero-img {
+        display: none;
+    }
+
+    .workshops-hero-img {
         display: none;
     }
 
