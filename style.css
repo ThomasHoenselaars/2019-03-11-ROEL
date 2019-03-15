@@ -236,11 +236,11 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .index-hero-img:after {
@@ -250,7 +250,7 @@ main {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .drumlessen-hero-img {
@@ -268,6 +268,19 @@ main {
 
 .workshops-hero-img {
     background-image: url('images/groepslessen.jpg');
+    width: 100%;
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.voorstellingen-hero-img {
+    background-image: url('images/banwakaboom.jpg');
     width: 100%;
     height: 30rem;
     background-position: center;
@@ -442,6 +455,21 @@ main {
     margin-bottom: 4rem;
 }
 
+
+.who-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.product.person {
+    display: grid;
+    grid-template-rows: 20rem auto;
+}
+
+
+
 .product-caption {
     line-height: 1.6;
     padding: 1rem;
@@ -544,6 +572,10 @@ main {
     }
 
     .workshops-hero-img {
+        display: none;
+    }
+
+    .voorstellingen-hero-img {
         display: none;
     }
 
