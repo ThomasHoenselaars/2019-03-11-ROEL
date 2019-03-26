@@ -605,10 +605,10 @@ main {
         cursor: pointer;
     }
 
-    .nav-main-items {
+    .nav-main-items.nav-logo {
         flex: 1;
         text-align: center;
-        margin-left: -50px;
+        margin-right: 50px;
     }
 
 
